@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seerat e Mustafa ﷺ Quiz Competition Result</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      background: radial-gradient(circle at top, #001f3f, #000814);
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* ====== HEADER TITLE ====== */
+    h1 {
+      font-size: 2.8rem;
+      text-align: center;
+      margin-bottom: 20px;
+      color: #ffd700;
+      text-shadow: 0 0 25px #ffcc00, 0 0 40px #ffeb3b;
+      animation: glow 2s ease-in-out infinite alternate, fadeInDown 1.5s ease forwards;
+      opacity: 0;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #ffeb3b, 0 0 20px #ffc107; }
+      to { text-shadow: 0 0 30px #fff, 0 0 60px #ffd700; }
+    }
+
+    @keyframes fadeInDown {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    /* ===== SUBTITLE ===== */
+    h2 {
+      font-size: 1.8rem;
+      color: #00e5ff;
+      text-shadow: 0 0 20px #00ffff, 0 0 30px #00bcd4;
+      margin-bottom: 35px;
+      animation: fadeInUp 1s ease forwards;
+      opacity: 0;
+      animation-delay: 0.5s;
+    }
+
+    @keyframes fadeInUp {
+      from { transform: translateY(50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    /* ====== TABLE ====== */
+    table {
+      border-collapse: collapse;
+      margin: 0 auto;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 0 25px #00e5ff55, 0 0 50px #00968833;
+      backdrop-filter: blur(8px);
+      animation: fadeInUp 1.5s ease forwards;
+      opacity: 0;
+      animation-delay: 1s;
+    }
+
+    th, td {
+      padding: 14px 26px;
+      border-bottom: 1px solid #00e5ff55;
+    }
+
+    th {
+      background: linear-gradient(90deg, #00bcd4, #009688);
+      color: #fff;
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+    }
+
+    td {
+      color: #ffeb3b;
+      font-size: 1.1rem;
+      text-align: center;
+    }
+
+    tr:hover {
+      background: rgba(0, 255, 255, 0.1);
+      transition: 0.3s;
+    }
+
+    /* ====== FLYING PARTICLES ====== */
+    .particle {
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      background: #00ffff;
+      border-radius: 50%;
+      opacity: 0.8;
+      animation: fly 8s linear infinite;
+    }
+
+    @keyframes fly {
+      from {
+        transform: translateY(100vh) translateX(0);
+        opacity: 1;
+      }
+      to {
+        transform: translateY(-100vh) translateX(200px);
+        opacity: 0;
+      }
+    }
+
+    /* ====== MOSQUE SHADOW ====== */
+    .mosque {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 220px;
+      background: url(https://chatgpt.com/backend-api/estuary/content?id=file_00000000e24c62089f0e8d281af76f8b&ts=489369&p=fs&cid=1&sig=778771b6f726b3d57a1cf44ed4f25e344370361b6abe62f307c4da486e36f09a&v=0)
+       no-repeat center bottom;
+      background-size: contain;
+      opacity: 0.15;
+      pointer-events: none;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      position: absolute;
+      bottom: 12px;
+      text-align: center;
+      color: #00ffffcc;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+    }
+
+    /* ===== STAR BACKGROUND EFFECT ===== */
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.6; }
+      50% { opacity: 1; }
+    }
+
+    .star {
+      position: absolute;
+      width: 3px;
+      height: 3px;
+      background: #fff;
+      border-radius: 50%;
+      animation: twinkle 2s infinite ease-in-out;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>SEERAT E MUSTAFA ﷺ QUIZ RESULTS</h1>
+  <h2>🏆 Winner's Results List 🏆</h2>
+
+  <table>
+    <tr><th>Name</th><th>Father Name</th><th>Score</th><th>Position</th></tr>
+    <tr><td>AYESHA FATIMA</td><td>NASER</td><td>93</td><td>🥇 1st</td></tr>
+    <tr><td>ANEEQA AKTHAR</td><td>MD KABEER UDDIN</td><td>84</td><td>🥈 2nd</td></tr>
+    <tr><td>MD MUHIB HASSAN</td><td>MD MOIN</td><td>82½</td><td>🥉 3rd</td></tr>
+    <tr><td>SAMEEM SULTANA</td><td>H/O MD SAIFULLA</td><td>82</td><td>4th</td></tr>
+    <tr><td>SHAMEEM UNISSA</td><td>FAIZ UDDIN</td><td>81½</td><td>5th</td></tr>
+    <tr><td>ZAMEER</td><td>MD KABEER UDDIN</td><td>81</td><td>6th</td></tr>
+    <tr><td>AFIFA KOUSER</td><td>AZIZ UR RAHMAN</td><td>79½</td><td>7th</td></tr>
+    <tr><td>MUSKAN TABASSUM</td><td>SALAHUDDIN</td><td>79½</td><td>7th</td></tr>
+    <tr><td>MD FARHAN</td><td>ABDUL RAHMAN</td><td>79</td><td>8th</td></tr>
+    <tr><td>SADIYA MAHREEN</td><td>MD AZAM</td><td>78</td><td>9th</td></tr>
+    <tr><td>SAMREEN SULTANA</td><td>MD AKRAM</td><td>78</td><td>9th</td></tr>
+    <tr><td>MD BILAL</td><td>MD AKBAR</td><td>77</td><td>10th</td></tr>
+    <tr><td>ASWAQ</td><td>MD MAZHAR</td><td>77</td><td>10th</td></tr>
+  </table>
+
+  <div class="mosque"></div>
+
+  <footer>✨ Congratulations to all participants of Seerat e Mustafa ﷺ Quiz Competition ✨</footer>
+
+  <script>
+    // Generate random flying particles
+    const body = document.body;
+    for (let i = 0; i < 25; i++) {
+      const p = document.createElement('div');
+      p.classList.add('particle');
+      p.style.left = Math.random() * 100 + 'vw';
+      p.style.animationDuration = (6 + Math.random() * 5) + 's';
+      p.style.animationDelay = Math.random() * 5 + 's';
+      body.appendChild(p);
+    }
+
+    // Add twinkling stars
+    for (let i = 0; i < 40; i++) {
+      const s = document.createElement('div');
+      s.classList.add('star');
+      s.style.left = Math.random() * 100 + 'vw';
+      s.style.top = Math.random() * 100 + 'vh';
+      s.style.animationDelay = Math.random() * 2 + 's';
+      body.appendChild(s);
+    }
+  </script>
+
+</body>
+</html>
